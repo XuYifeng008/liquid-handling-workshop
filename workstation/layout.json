@@ -1,0 +1,28 @@
+{
+  "units": "mm",
+  "frame": "negative_limit_mm_v1",
+  "initial_points": {
+    "safe": [59.89, 229.98, 10.00],
+    "tip_a": [58.89, 161.48, 172.00],
+    "tip_col": [157.89, 161.48, 172.00],
+    "tip_row": [58.89, 224.48, 172.00],
+    "tube_a": [55.39, 95.68, 158.00],
+    "tube_col": [164.39, 95.68, 158.00],
+    "tube_row": [55.39, 117.48, 158.00],
+    "waste": [107.78, 28.28, 128.00]
+  },
+  "limits": {"x": [0, 340], "y": [0, 250], "z": [0, 200]},
+  "motion": {
+    "homing_speed_mm_s": 50,
+    "homing_timeout_s": 30.0,
+    "homing_clearance_mm": 10.0,
+    "homing_stable_time_s": 1.0,
+    "homing_check_interval_s": 0.2,
+    "default_speed_mm_s": 50,
+    "xy_speed_factor": 1.0,
+    "z_speed_factor": 3.5,
+    "acceleration_rpm_s": 500,
+    "max_rpm": {"x": 38, "y": 38, "z": 300}
+  },
+  "pitch": {"tip": 9.0, "tube": 21.8}
+}

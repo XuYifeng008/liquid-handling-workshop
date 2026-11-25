@@ -1,0 +1,19 @@
+{
+  "port": "COM9",
+  "baud": 9600,
+  "data_bits": 8,
+  "parity": "None",
+  "stop_bits": 1,
+  "handshake": "None",
+  "dtr": false,
+  "rts": false,
+  "label": "initial-passive",
+  "start_utc": "2026-11-24T05:58:50.7361241+00:00",
+  "duration_requested_s": 8.0,
+  "duration_observed_s": 0.0,
+  "timing_note": "RX timestamps are host read times, not per-byte wire times. Read chunks are not protocol frames.",
+  "tx_read_request_sent": false,
+  "rx_bytes": 0,
+  "error": "System.Management.Automation.MethodInvocationException: Exception calling \"Open\" with \"0\" argument(s): \"Access to the path 'COM9' is denied.\"\r\n ---> System.UnauthorizedAccessException: Access to the path 'COM9' is denied.\r\n   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)\r\n   at System.IO.Ports.SerialPort.Open()\r\n   at CallSite.Target(Closure, CallSite, Object)\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)",
+  "chunks": []
+}

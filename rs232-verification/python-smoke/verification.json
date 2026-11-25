@@ -1,0 +1,18 @@
+[
+  {
+    "run": "stream-20261124",
+    "rows": 20,
+    "raw_bytes": 360,
+    "last_grams": "0.000",
+    "raw_log_identity": "PASS",
+    "discarded_bytes": 0
+  },
+  {
+    "run": "stable-20261124",
+    "rows": 5,
+    "raw_bytes": 99,
+    "last_grams": "0.000",
+    "raw_log_identity": "PASS",
+    "discarded_bytes": 9
+  }
+]

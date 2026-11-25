@@ -1,0 +1,39 @@
+{
+  "verified_utc": "2026-11-24T06:16:01.1052283+00:00",
+  "captures": [
+    {
+      "capture": "initial-passive",
+      "raw_bytes": 0,
+      "json_matches_binary": true,
+      "no_tx": true,
+      "open_succeeded": false
+    },
+    {
+      "capture": "initial-passive-host",
+      "raw_bytes": 1387,
+      "json_matches_binary": true,
+      "no_tx": true,
+      "open_succeeded": true
+    },
+    {
+      "capture": "load-change",
+      "raw_bytes": 10206,
+      "json_matches_binary": true,
+      "no_tx": true,
+      "open_succeeded": true
+    },
+    {
+      "capture": "tare-negative",
+      "raw_bytes": 15156,
+      "json_matches_binary": true,
+      "no_tx": true,
+      "open_succeeded": true
+    }
+  ],
+  "successful_captures": 3,
+  "validated_csv_frames": 1486,
+  "source_docx_sha256": "F69071DD6A551B25F310A027673FB42549C120481D9B09D4112BD857E52ACA01",
+  "raw_and_json_byte_identity": "PASS",
+  "csv_raw_fields_and_signed_value": "PASS",
+  "all_captures_no_tx": "PASS"
+}

@@ -1,0 +1,476 @@
+2026-11-25 16:26:41,507 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 16:26:41,508 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 16:33:55,498 WARNING workstation.control jog failed: X 目标 -39.9658 mm 超出工位行程 [-38.6, 301.4]
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 194, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 246, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 153, in axis
+    target = round(bounds(name, value) * STEPS[name])
+  File "E:\dev\works\liquid-handling-workshop\workstation\geometry.py", line 15, in bounds
+    raise ValueError(f"{axis.upper()} 目标 {value:g} mm 超出工位行程 [{low}, {high}]")
+ValueError: X 目标 -39.9658 mm 超出工位行程 [-38.6, 301.4]
+2026-11-25 16:33:57,718 WARNING workstation.control jog failed: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 194, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 246, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 153, in axis
+    target = round(bounds(name, value) * STEPS[name])
+  File "E:\dev\works\liquid-handling-workshop\workstation\geometry.py", line 15, in bounds
+    raise ValueError(f"{axis.upper()} 目标 {value:g} mm 超出工位行程 [{low}, {high}]")
+ValueError: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+2026-11-25 16:34:01,854 WARNING workstation.control jog failed: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 194, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 246, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 153, in axis
+    target = round(bounds(name, value) * STEPS[name])
+  File "E:\dev\works\liquid-handling-workshop\workstation\geometry.py", line 15, in bounds
+    raise ValueError(f"{axis.upper()} 目标 {value:g} mm 超出工位行程 [{low}, {high}]")
+ValueError: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+2026-11-25 16:34:12,246 WARNING workstation.control jog failed: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 194, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 246, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 153, in axis
+    target = round(bounds(name, value) * STEPS[name])
+  File "E:\dev\works\liquid-handling-workshop\workstation\geometry.py", line 15, in bounds
+    raise ValueError(f"{axis.upper()} 目标 {value:g} mm 超出工位行程 [{low}, {high}]")
+ValueError: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+2026-11-25 16:34:17,168 WARNING workstation.control jog failed: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 194, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 246, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 153, in axis
+    target = round(bounds(name, value) * STEPS[name])
+  File "E:\dev\works\liquid-handling-workshop\workstation\geometry.py", line 15, in bounds
+    raise ValueError(f"{axis.upper()} 目标 {value:g} mm 超出工位行程 [{low}, {high}]")
+ValueError: X 目标 -39.9414 mm 超出工位行程 [-38.6, 301.4]
+2026-11-25 16:34:32,066 WARNING workstation.control jog failed: X 目标 -39.9121 mm 超出工位行程 [-38.6, 301.4]
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 194, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 246, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 153, in axis
+    target = round(bounds(name, value) * STEPS[name])
+  File "E:\dev\works\liquid-handling-workshop\workstation\geometry.py", line 15, in bounds
+    raise ValueError(f"{axis.upper()} 目标 {value:g} mm 超出工位行程 [{low}, {high}]")
+ValueError: X 目标 -39.9121 mm 超出工位行程 [-38.6, 301.4]
+2026-11-25 16:34:49,487 WARNING workstation.control initialize failed: 三轴可点动。请在废头位退掉现有枪头，再初始化移液器
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 184, in execute
+    self.rig.initialize()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 130, in initialize
+    raise ValueError("三轴可点动。请在废头位退掉现有枪头，再初始化移液器")
+ValueError: 三轴可点动。请在废头位退掉现有枪头，再初始化移液器
+2026-11-25 16:34:55,389 WARNING workstation.control jog failed: X 目标 -39.9072 mm 超出工位行程 [-38.6, 301.4]
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 89, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 194, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 246, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 153, in axis
+    target = round(bounds(name, value) * STEPS[name])
+  File "E:\dev\works\liquid-handling-workshop\workstation\geometry.py", line 15, in bounds
+    raise ValueError(f"{axis.upper()} 目标 {value:g} mm 超出工位行程 [{low}, {high}]")
+ValueError: X 目标 -39.9072 mm 超出工位行程 [-38.6, 301.4]
+2026-11-25 16:54:03,398 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 16:54:03,399 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 16:56:51,284 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 16:56:51,286 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 16:56:52,971 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 16:56:54,784 INFO workstation.control Z 轴已找到负限位，退离 10 mm
+2026-11-25 16:56:59,723 INFO workstation.hardware Homed Z: negative limit at -30917 encoder steps
+2026-11-25 16:56:59,723 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 16:57:07,978 WARNING workstation.control initialize failed: X 轴停住但未报告负限位，未建立原点
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 91, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 195, in execute
+    self.rig.initialize(self.homing_progress)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 142, in initialize
+    found[name] = self._home_axis(name, progress)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 184, in _home_axis
+    raise RuntimeError(f"{axis.name} 轴停住但未报告负限位，未建立原点")
+RuntimeError: X 轴停住但未报告负限位，未建立原点
+2026-11-25 17:07:19,508 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 17:07:19,508 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 17:09:53,613 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 17:09:53,614 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 17:09:55,473 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 17:09:59,057 INFO workstation.hardware Seeking z: first=1851, stopped=-30858, status=STANDBY, speed=0
+2026-11-25 17:20:34,376 WARNING workstation.control initialize failed: 运行已停止，请核对现场后重新连接设备
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 96, in _worker
+    self.error = str(exc) or type(exc).__name__
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 226, in execute
+    raise ValueError("请为六支样品选择六个不同的有效试管位")
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 144, in initialize
+    found[name] = self._home_axis(name, progress)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 196, in _home_axis
+    raise RuntimeError(f"{axis.name} 轴回零停止应答缺失")
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 139, in confirm_endpoint
+    self.step = "设备已断开"
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 126, in check
+    raise RuntimeError("运行已停止，请核对现场后重新连接设备")
+RuntimeError: 运行已停止，请核对现场后重新连接设备
+2026-11-25 17:20:40,427 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 17:20:40,427 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 17:23:42,788 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 17:23:42,789 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 17:23:44,382 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 17:23:46,709 INFO workstation.control Z 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 17:23:51,394 INFO workstation.hardware Homed Z: 寻零位置持续稳定 at -30857 encoder steps
+2026-11-25 17:23:51,395 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 17:23:53,853 INFO workstation.control X 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 17:23:56,222 INFO workstation.hardware Homed X: 寻零位置持续稳定 at -24291 encoder steps
+2026-11-25 17:23:56,223 INFO workstation.control Y 轴正在向负限位回零
+2026-11-25 17:24:09,888 INFO workstation.control Y 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 17:24:18,733 INFO workstation.hardware Homed Y: 寻零位置持续稳定 at -2642 encoder steps
+2026-11-25 17:24:18,734 INFO workstation.control 三轴回零已完成，正在加载移液器参数
+2026-11-25 17:30:25,137 WARNING workstation.control jog failed: Z 轴触发 FORWARD_LIMIT_STOP
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 207, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 261, in calibrate
+    self.rig.axis(axis,pos["xyz".index(axis)]+distance,slow=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 226, in axis
+    self._axis_to(name, target, slow)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 248, in _axis_to
+    raise RuntimeError(f"{axis.name} 轴触发 {state.status.name}")
+RuntimeError: Z 轴触发 FORWARD_LIMIT_STOP
+2026-11-25 17:30:48,336 WARNING workstation.control lift failed: 运行已停止，请核对现场后重新连接设备
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 188, in execute
+    self.require_link()
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 120, in require_link
+    self.rig.check()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 126, in check
+    raise RuntimeError("运行已停止，请核对现场后重新连接设备")
+RuntimeError: 运行已停止，请核对现场后重新连接设备
+2026-11-25 17:30:55,542 WARNING workstation.control lift failed: 运行已停止，请核对现场后重新连接设备
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 188, in execute
+    self.require_link()
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 120, in require_link
+    self.rig.check()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 126, in check
+    raise RuntimeError("运行已停止，请核对现场后重新连接设备")
+RuntimeError: 运行已停止，请核对现场后重新连接设备
+2026-11-25 17:31:08,810 WARNING workstation.control lift failed: 运行已停止，请核对现场后重新连接设备
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 188, in execute
+    self.require_link()
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 120, in require_link
+    self.rig.check()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 126, in check
+    raise RuntimeError("运行已停止，请核对现场后重新连接设备")
+RuntimeError: 运行已停止，请核对现场后重新连接设备
+2026-11-25 17:31:11,403 WARNING workstation.control teach_eject failed: 运行已停止，请核对现场后重新连接设备
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 188, in execute
+    self.require_link()
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 120, in require_link
+    self.rig.check()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 126, in check
+    raise RuntimeError("运行已停止，请核对现场后重新连接设备")
+RuntimeError: 运行已停止，请核对现场后重新连接设备
+2026-11-25 17:31:40,688 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 17:31:40,689 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 17:50:32,607 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 17:50:32,607 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 17:50:34,532 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 17:50:53,540 INFO workstation.control Z 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 17:50:58,103 INFO workstation.hardware Homed Z: 寻零位置持续稳定 at -424070 encoder steps
+2026-11-25 17:50:58,104 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 17:51:04,274 INFO workstation.control X 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 17:51:06,532 INFO workstation.hardware Homed X: 寻零位置持续稳定 at -7904 encoder steps
+2026-11-25 17:51:06,533 INFO workstation.control Y 轴正在向负限位回零
+2026-11-25 17:51:20,776 INFO workstation.control Y 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 17:51:29,702 INFO workstation.hardware Homed Y: 寻零位置持续稳定 at -19021 encoder steps
+2026-11-25 17:51:29,703 INFO workstation.control 三轴回零已完成，正在加载移液器参数
+2026-11-25 17:55:42,982 WARNING workstation.control jog failed: 请先点击“抬到横移面”，再点动 X 或 Y
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 213, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 295, in calibrate
+    raise ValueError("请先点击“抬到横移面”，再点动 X 或 Y")
+ValueError: 请先点击“抬到横移面”，再点动 X 或 Y
+2026-11-25 17:55:47,605 WARNING workstation.control jog failed: 请先点击“抬到横移面”，再点动 X 或 Y
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 213, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 295, in calibrate
+    raise ValueError("请先点击“抬到横移面”，再点动 X 或 Y")
+ValueError: 请先点击“抬到横移面”，再点动 X 或 Y
+2026-11-25 18:17:45,255 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 18:17:45,258 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 18:18:51,373 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 18:18:51,374 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 18:18:52,997 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 18:18:55,508 INFO workstation.control Z 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 18:18:58,104 INFO workstation.hardware Homed Z: 寻零位置持续稳定 at -424206 encoder steps
+2026-11-25 18:18:58,105 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 18:19:02,100 INFO workstation.control X 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 18:19:03,903 INFO workstation.hardware Homed X: 寻零位置持续稳定 at -7906 encoder steps
+2026-11-25 18:19:03,904 INFO workstation.control Y 轴正在向负限位回零
+2026-11-25 18:19:06,387 INFO workstation.control Y 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 18:19:14,601 INFO workstation.hardware Homed Y: 寻零位置持续稳定 at -19029 encoder steps
+2026-11-25 18:19:14,602 INFO workstation.control 三轴回零已完成，正在加载移液器参数
+2026-11-25 18:43:47,902 WARNING workstation.control teach_pick failed: Z 轴触发 FORWARD_LIMIT_STOP
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 213, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 269, in calibrate
+    self.rig.travel(grid_point(self.points,"tip",tip),safe)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 293, in travel
+    self.axis("z", target[2], final_approach=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 241, in axis
+    self._axis_to(name, target, rpm)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 261, in _axis_to
+    raise RuntimeError(f"{axis.name} 轴触发 {state.status.name}")
+RuntimeError: Z 轴触发 FORWARD_LIMIT_STOP
+2026-11-25 18:44:42,798 WARNING workstation.control lift failed: 运行已停止，请核对现场后重新连接设备
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 188, in execute
+    self.require_link()
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 120, in require_link
+    self.rig.check()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 133, in check
+    raise RuntimeError("运行已停止，请核对现场后重新连接设备")
+RuntimeError: 运行已停止，请核对现场后重新连接设备
+2026-11-25 18:44:48,549 WARNING workstation.control lift failed: 运行已停止，请核对现场后重新连接设备
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 188, in execute
+    self.require_link()
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 120, in require_link
+    self.rig.check()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 133, in check
+    raise RuntimeError("运行已停止，请核对现场后重新连接设备")
+RuntimeError: 运行已停止，请核对现场后重新连接设备
+2026-11-25 18:46:22,013 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 18:46:22,015 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 18:46:22,022 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 18:46:22,022 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 18:46:48,949 WARNING workstation.control initialize failed: 回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 196, in execute
+    self.rig.initialize(self.homing_progress)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 140, in initialize
+    raise ValueError("回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通")
+ValueError: 回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通
+2026-11-25 18:46:55,842 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 18:46:55,843 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 18:46:55,848 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 18:46:55,849 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 18:47:05,132 WARNING workstation.control teach_eject failed: 退头后仍检测到枪头
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 213, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 253, in calibrate
+    self.rig.eject()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 309, in eject
+    self.confirm_tip(False)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 304, in confirm_tip
+    raise RuntimeError("取头后未检测到枪头" if expected else "退头后仍检测到枪头")
+RuntimeError: 退头后仍检测到枪头
+2026-11-25 18:47:10,016 WARNING workstation.control initialize failed: 回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 196, in execute
+    self.rig.initialize(self.homing_progress)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 140, in initialize
+    raise ValueError("回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通")
+ValueError: 回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通
+2026-11-25 18:47:13,479 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 18:47:13,481 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 18:47:13,487 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 18:47:13,488 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 18:47:29,292 WARNING workstation.control initialize failed: 回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 196, in execute
+    self.rig.initialize(self.homing_progress)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 140, in initialize
+    raise ValueError("回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通")
+ValueError: 回零前请先卸下枪头，确认 Z 向上及 X、Y 的回零路径畅通
+2026-11-25 18:48:10,601 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 18:48:10,601 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 18:48:10,607 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 18:48:10,608 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 18:48:25,290 WARNING workstation.control teach_eject failed: SOPA R 等待完成回执超时
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 213, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 253, in calibrate
+    self.rig.eject()
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 308, in eject
+    self.pipette.exchange("R")
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 63, in exchange
+    raise TimeoutError(f"SOPA {command} 等待{'数据' if expected else '完成回执'}超时")
+TimeoutError: SOPA R 等待完成回执超时
+2026-11-25 18:48:31,815 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 18:48:39,291 INFO workstation.control Z 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 18:48:41,847 INFO workstation.hardware Homed Z: 寻零位置持续稳定 at -456838 encoder steps
+2026-11-25 18:48:41,849 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 18:48:44,949 INFO workstation.control X 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 18:48:46,738 INFO workstation.hardware Homed X: 寻零位置持续稳定 at -7903 encoder steps
+2026-11-25 18:48:46,739 INFO workstation.control Y 轴正在向负限位回零
+2026-11-25 18:48:51,802 INFO workstation.control Y 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 18:48:59,332 INFO workstation.hardware Homed Y: 寻零位置持续稳定 at -19038 encoder steps
+2026-11-25 18:48:59,332 INFO workstation.control 三轴回零已完成，正在加载移液器参数
+2026-11-25 18:53:11,025 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 18:53:11,025 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 18:53:11,032 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 18:53:11,032 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 19:00:59,938 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 19:00:59,939 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 19:00:59,945 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 19:00:59,945 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 19:04:05,849 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 19:04:08,387 INFO workstation.control Z 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:04:10,950 INFO workstation.hardware Homed Z: 寻零位置持续稳定 at -456959 encoder steps
+2026-11-25 19:04:10,951 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 19:04:12,930 INFO workstation.control X 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:04:14,893 INFO workstation.hardware Homed X: 寻零位置持续稳定 at -7885 encoder steps
+2026-11-25 19:04:14,895 INFO workstation.control Y 轴正在向负限位回零
+2026-11-25 19:04:17,138 INFO workstation.control Y 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:04:18,601 INFO workstation.hardware Homed Y: 寻零位置持续稳定 at -19032 encoder steps
+2026-11-25 19:04:18,601 INFO workstation.control 三轴回零已完成，正在加载移液器参数
+2026-11-25 19:11:41,692 WARNING workstation.control run failed: Z 轴触发 FORWARD_LIMIT_STOP
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 92, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 224, in execute
+    self.run(self.current(d),d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 399, in run
+    self.transfer(sess,phase,sample,command)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 418, in transfer
+    self.rig.travel(grid_point(self.points,"tip",tip),safe)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 293, in travel
+    self.axis("z", target[2], final_approach=True)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 241, in axis
+    self._axis_to(name, target, rpm)
+  File "E:\dev\works\liquid-handling-workshop\workstation\hardware.py", line 261, in _axis_to
+    raise RuntimeError(f"{axis.name} 轴触发 {state.status.name}")
+RuntimeError: Z 轴触发 FORWARD_LIMIT_STOP
+2026-11-25 19:14:15,018 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 19:14:15,020 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 19:14:15,028 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 19:14:15,028 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 19:14:20,788 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 19:14:28,524 INFO workstation.control Z 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:14:31,221 INFO workstation.hardware Homed Z: 寻零位置持续稳定 at -456669 encoder steps
+2026-11-25 19:14:31,225 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 19:14:34,390 INFO workstation.control X 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:14:36,199 INFO workstation.hardware Homed X: 寻零位置持续稳定 at -7901 encoder steps
+2026-11-25 19:14:36,200 INFO workstation.control Y 轴正在向负限位回零
+2026-11-25 19:14:41,378 INFO workstation.control Y 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:14:42,872 INFO workstation.hardware Homed Y: 寻零位置持续稳定 at -19039 encoder steps
+2026-11-25 19:14:42,873 INFO workstation.control 三轴回零已完成，正在加载移液器参数
+2026-11-25 19:22:11,035 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 19:22:11,036 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放
+2026-11-25 19:22:29,934 INFO workstation.legacy.rs485_bus 已打开共享 RS485 总线: COM13
+2026-11-25 19:22:29,934 INFO workstation.legacy.xyz_stepper_driver 已连接到串口: COM13
+2026-11-25 19:22:36,674 INFO workstation.control Z 轴正在向负限位回零
+2026-11-25 19:22:39,211 INFO workstation.control Z 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:22:41,734 INFO workstation.hardware Homed Z: 寻零位置持续稳定 at -456968 encoder steps
+2026-11-25 19:22:41,734 INFO workstation.control X 轴正在向负限位回零
+2026-11-25 19:22:44,844 INFO workstation.control X 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:22:46,643 INFO workstation.hardware Homed X: 寻零位置持续稳定 at -7905 encoder steps
+2026-11-25 19:22:46,644 INFO workstation.control Y 轴正在向负限位回零
+2026-11-25 19:22:51,831 INFO workstation.control Y 轴寻零位置持续稳定已确认，退离 10 mm
+2026-11-25 19:22:59,048 INFO workstation.hardware Homed Y: 寻零位置持续稳定 at -19041 encoder steps
+2026-11-25 19:22:59,049 INFO workstation.control 三轴回零已完成，正在加载移液器参数
+2026-11-25 19:27:31,225 WARNING workstation.control jog failed: 请先点击“抬到横移面”，再点动 X 或 Y
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 93, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 214, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 296, in calibrate
+    raise ValueError("请先点击“抬到横移面”，再点动 X 或 Y")
+ValueError: 请先点击“抬到横移面”，再点动 X 或 Y
+2026-11-25 19:27:40,884 WARNING workstation.control jog failed: 请先点击“抬到横移面”，再点动 X 或 Y
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 93, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 214, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 296, in calibrate
+    raise ValueError("请先点击“抬到横移面”，再点动 X 或 Y")
+ValueError: 请先点击“抬到横移面”，再点动 X 或 Y
+2026-11-25 19:34:13,363 WARNING workstation.control jog failed: 请先点击“抬到横移面”，再点动 X 或 Y
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 93, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 214, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 296, in calibrate
+    raise ValueError("请先点击“抬到横移面”，再点动 X 或 Y")
+ValueError: 请先点击“抬到横移面”，再点动 X 或 Y
+2026-11-25 19:34:17,079 WARNING workstation.control jog failed: 请先点击“抬到横移面”，再点动 X 或 Y
+Traceback (most recent call last):
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 93, in _worker
+    self.execute(name,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 214, in execute
+    self.calibrate(op,d)
+  File "E:\dev\works\liquid-handling-workshop\workstation\control.py", line 296, in calibrate
+    raise ValueError("请先点击“抬到横移面”，再点动 X 或 Y")
+ValueError: 请先点击“抬到横移面”，再点动 X 或 Y
+2026-11-25 20:18:36,138 INFO workstation.legacy.rs485_bus 已关闭共享 RS485 总线: COM13
+2026-11-25 20:18:36,143 INFO workstation.legacy.xyz_stepper_driver 串口连接已释放

@@ -1,0 +1,503 @@
+[
+  {
+    "label": "initial-passive",
+    "folder": "20261124-135850-initial-passive",
+    "start_utc": "2026-11-24T05:58:50.7361241Z",
+    "baud": 9600,
+    "duration_s": 0.0,
+    "error": "System.Management.Automation.MethodInvocationException: Exception calling \"Open\" with \"0\" argument(s): \"Access to the path 'COM9' is denied.\"\r\n ---> System.UnauthorizedAccessException: Access to the path 'COM9' is denied.\r\n   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)\r\n   at System.IO.Ports.SerialPort.Open()\r\n   at CallSite.Target(Closure, CallSite, Object)\r\n   --- End of inner exception stack trace ---\r\n   at System.Management.Automation.ExceptionHandlingOps.CheckActionPreference(FunctionContext funcContext, Exception exception)\r\n   at System.Management.Automation.Interpreter.ActionCallInstruction`2.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)\r\n   at System.Management.Automation.Interpreter.EnterTryCatchFinallyInstruction.Run(InterpretedFrame frame)",
+    "rx_bytes": 0,
+    "tx": [],
+    "complete_crlf_records": 0,
+    "recognizable_frames": 0,
+    "unrecognized_records": 0,
+    "leading_residue": [],
+    "trailing_hex": "",
+    "nul_offsets": [],
+    "frame_lengths": [],
+    "statuses": [],
+    "modes": [],
+    "signs": [],
+    "units": [],
+    "min_value": null,
+    "max_value": null,
+    "rate_hz": null,
+    "interval_ms": {
+      "min": null,
+      "p05": null,
+      "median": null,
+      "p95": null,
+      "max": null
+    },
+    "examples": [],
+    "value_counts": [],
+    "transitions": []
+  },
+  {
+    "label": "initial-passive-host",
+    "folder": "20261124-135915-initial-passive-host",
+    "start_utc": "2026-11-24T05:59:15.9933529Z",
+    "baud": 9600,
+    "duration_s": 8.007,
+    "error": null,
+    "rx_bytes": 1387,
+    "tx": [],
+    "complete_crlf_records": 77,
+    "recognizable_frames": 77,
+    "unrecognized_records": 0,
+    "leading_residue": [
+      {
+        "index": 1,
+        "prefix_hex": "00"
+      }
+    ],
+    "trailing_hex": "",
+    "nul_offsets": [
+      0
+    ],
+    "frame_lengths": [
+      {
+        "Name": "18",
+        "Count": 77
+      }
+    ],
+    "statuses": [
+      {
+        "Name": "ST",
+        "Count": 77
+      }
+    ],
+    "modes": [
+      {
+        "Name": "GS",
+        "Count": 77
+      }
+    ],
+    "signs": [
+      {
+        "Name": "+",
+        "Count": 77
+      }
+    ],
+    "units": [
+      {
+        "Name": "g",
+        "Count": 77
+      }
+    ],
+    "min_value": 0.0,
+    "max_value": 0.0,
+    "rate_hz": 9.6945,
+    "interval_ms": {
+      "min": 76.853,
+      "p05": 91.068,
+      "median": 106.638,
+      "p95": 124.681,
+      "max": 156.736
+    },
+    "examples": [
+      {
+        "elapsed_ms": 70.914,
+        "ascii": "ST,GS,+  0.000 g",
+        "hex": "00 53 54 2C 47 53 2C 2B 20 20 30 2E 30 30 30 20 67 0D 0A",
+        "frame_bytes": 18
+      }
+    ],
+    "value_counts": [
+      {
+        "Name": "0",
+        "Count": 77
+      }
+    ],
+    "transitions": [
+      {
+        "elapsed_ms": 70.914,
+        "status": "ST",
+        "mode": "GS",
+        "value": 0.0,
+        "unit": "g",
+        "ascii": "ST,GS,+  0.000 g"
+      }
+    ]
+  },
+  {
+    "label": "load-change",
+    "folder": "20261124-140013-load-change",
+    "start_utc": "2026-11-24T06:00:13.7448666Z",
+    "baud": 9600,
+    "duration_s": 60.01,
+    "error": null,
+    "rx_bytes": 10206,
+    "tx": [],
+    "complete_crlf_records": 567,
+    "recognizable_frames": 567,
+    "unrecognized_records": 0,
+    "leading_residue": [],
+    "trailing_hex": "",
+    "nul_offsets": [],
+    "frame_lengths": [
+      {
+        "Name": "18",
+        "Count": 567
+      }
+    ],
+    "statuses": [
+      {
+        "Name": "ST",
+        "Count": 543
+      },
+      {
+        "Name": "US",
+        "Count": 24
+      }
+    ],
+    "modes": [
+      {
+        "Name": "GS",
+        "Count": 567
+      }
+    ],
+    "signs": [
+      {
+        "Name": "+",
+        "Count": 567
+      }
+    ],
+    "units": [
+      {
+        "Name": "g",
+        "Count": 567
+      }
+    ],
+    "min_value": 0.0,
+    "max_value": 4.754,
+    "rate_hz": 9.4485,
+    "interval_ms": {
+      "min": 61.014,
+      "p05": 91.585,
+      "median": 107.045,
+      "p95": 153.828,
+      "max": 215.956
+    },
+    "examples": [
+      {
+        "elapsed_ms": 75.538,
+        "ascii": "ST,GS,+  4.754 g",
+        "hex": "53 54 2C 47 53 2C 2B 20 20 34 2E 37 35 34 20 67 0D 0A",
+        "frame_bytes": 18
+      },
+      {
+        "elapsed_ms": 5815.967,
+        "ascii": "US,GS,+  4.753 g",
+        "hex": "55 53 2C 47 53 2C 2B 20 20 34 2E 37 35 33 20 67 0D 0A",
+        "frame_bytes": 18
+      }
+    ],
+    "value_counts": [
+      {
+        "Name": "0",
+        "Count": 507
+      },
+      {
+        "Name": "4.754",
+        "Count": 40
+      },
+      {
+        "Name": "4.753",
+        "Count": 3
+      },
+      {
+        "Name": "4.752",
+        "Count": 2
+      },
+      {
+        "Name": "0.366",
+        "Count": 1
+      },
+      {
+        "Name": "4.483",
+        "Count": 1
+      },
+      {
+        "Name": "4.167",
+        "Count": 1
+      },
+      {
+        "Name": "3.85",
+        "Count": 1
+      },
+      {
+        "Name": "3.533",
+        "Count": 1
+      },
+      {
+        "Name": "3.217",
+        "Count": 1
+      },
+      {
+        "Name": "2.9",
+        "Count": 1
+      },
+      {
+        "Name": "2.266",
+        "Count": 1
+      }
+    ],
+    "transitions": [
+      {
+        "elapsed_ms": 75.538,
+        "status": "ST",
+        "mode": "GS",
+        "value": 4.754,
+        "unit": "g",
+        "ascii": "ST,GS,+  4.754 g"
+      },
+      {
+        "elapsed_ms": 5815.967,
+        "status": "US",
+        "mode": "GS",
+        "value": 4.753,
+        "unit": "g",
+        "ascii": "US,GS,+  4.753 g"
+      },
+      {
+        "elapsed_ms": 8281.382,
+        "status": "ST",
+        "mode": "GS",
+        "value": 0.0,
+        "unit": "g",
+        "ascii": "ST,GS,+  0.000 g"
+      }
+    ]
+  },
+  {
+    "label": "tare-negative",
+    "folder": "20261124-140259-tare-negative",
+    "start_utc": "2026-11-24T06:02:59.3745545Z",
+    "baud": 9600,
+    "duration_s": 90.014,
+    "error": null,
+    "rx_bytes": 15156,
+    "tx": [],
+    "complete_crlf_records": 842,
+    "recognizable_frames": 842,
+    "unrecognized_records": 0,
+    "leading_residue": [],
+    "trailing_hex": "",
+    "nul_offsets": [],
+    "frame_lengths": [
+      {
+        "Name": "18",
+        "Count": 842
+      }
+    ],
+    "statuses": [
+      {
+        "Name": "ST",
+        "Count": 735
+      },
+      {
+        "Name": "US",
+        "Count": 107
+      }
+    ],
+    "modes": [
+      {
+        "Name": "GS",
+        "Count": 842
+      }
+    ],
+    "signs": [
+      {
+        "Name": "-",
+        "Count": 212
+      },
+      {
+        "Name": "+",
+        "Count": 630
+      }
+    ],
+    "units": [
+      {
+        "Name": "g",
+        "Count": 842
+      }
+    ],
+    "min_value": -4.753,
+    "max_value": 4.762,
+    "rate_hz": 9.3562,
+    "interval_ms": {
+      "min": 45.506,
+      "p05": 91.91,
+      "median": 107.076,
+      "p95": 154.936,
+      "max": 215.52
+    },
+    "examples": [
+      {
+        "elapsed_ms": 30514.744,
+        "ascii": "ST,GS,-  0.005 g",
+        "hex": "53 54 2C 47 53 2C 2D 20 20 30 2E 30 30 35 20 67 0D 0A",
+        "frame_bytes": 18
+      },
+      {
+        "elapsed_ms": 46.316,
+        "ascii": "ST,GS,+  0.000 g",
+        "hex": "53 54 2C 47 53 2C 2B 20 20 30 2E 30 30 30 20 67 0D 0A",
+        "frame_bytes": 18
+      },
+      {
+        "elapsed_ms": 29910.611,
+        "ascii": "US,GS,-  0.004 g",
+        "hex": "55 53 2C 47 53 2C 2D 20 20 30 2E 30 30 34 20 67 0D 0A",
+        "frame_bytes": 18
+      },
+      {
+        "elapsed_ms": 38111.126,
+        "ascii": "US,GS,+  0.114 g",
+        "hex": "55 53 2C 47 53 2C 2B 20 20 30 2E 31 31 34 20 67 0D 0A",
+        "frame_bytes": 18
+      }
+    ],
+    "value_counts": [
+      {
+        "Name": "0",
+        "Count": 548
+      },
+      {
+        "Name": "-4.753",
+        "Count": 94
+      },
+      {
+        "Name": "-0.005",
+        "Count": 63
+      },
+      {
+        "Name": "4.753",
+        "Count": 51
+      },
+      {
+        "Name": "-4.752",
+        "Count": 4
+      },
+      {
+        "Name": "4.755",
+        "Count": 4
+      },
+      {
+        "Name": "-4.751",
+        "Count": 3
+      },
+      {
+        "Name": "-0.007",
+        "Count": 3
+      },
+      {
+        "Name": "4.76",
+        "Count": 2
+      },
+      {
+        "Name": "4.757",
+        "Count": 2
+      },
+      {
+        "Name": "4.756",
+        "Count": 2
+      },
+      {
+        "Name": "-0.004",
+        "Count": 2
+      }
+    ],
+    "transitions": [
+      {
+        "elapsed_ms": 46.316,
+        "status": "ST",
+        "mode": "GS",
+        "value": 0.0,
+        "unit": "g",
+        "ascii": "ST,GS,+  0.000 g"
+      },
+      {
+        "elapsed_ms": 29910.611,
+        "status": "US",
+        "mode": "GS",
+        "value": -0.004,
+        "unit": "g",
+        "ascii": "US,GS,-  0.004 g"
+      },
+      {
+        "elapsed_ms": 30514.744,
+        "status": "ST",
+        "mode": "GS",
+        "value": -0.005,
+        "unit": "g",
+        "ascii": "ST,GS,-  0.005 g"
+      },
+      {
+        "elapsed_ms": 36451.252,
+        "status": "US",
+        "mode": "GS",
+        "value": -0.006,
+        "unit": "g",
+        "ascii": "US,GS,-  0.006 g"
+      },
+      {
+        "elapsed_ms": 42197.978,
+        "status": "ST",
+        "mode": "GS",
+        "value": 4.753,
+        "unit": "g",
+        "ascii": "ST,GS,+  4.753 g"
+      },
+      {
+        "elapsed_ms": 49866.458,
+        "status": "US",
+        "mode": "GS",
+        "value": 0.0,
+        "unit": "g",
+        "ascii": "US,GS,+  0.000 g"
+      },
+      {
+        "elapsed_ms": 50267.457,
+        "status": "ST",
+        "mode": "GS",
+        "value": 0.0,
+        "unit": "g",
+        "ascii": "ST,GS,+  0.000 g"
+      },
+      {
+        "elapsed_ms": 59029.079,
+        "status": "US",
+        "mode": "GS",
+        "value": -0.005,
+        "unit": "g",
+        "ascii": "US,GS,-  0.005 g"
+      },
+      {
+        "elapsed_ms": 63373.459,
+        "status": "ST",
+        "mode": "GS",
+        "value": -4.753,
+        "unit": "g",
+        "ascii": "ST,GS,-  4.753 g"
+      },
+      {
+        "elapsed_ms": 72592.887,
+        "status": "US",
+        "mode": "GS",
+        "value": 0.0,
+        "unit": "g",
+        "ascii": "US,GS,+  0.000 g"
+      },
+      {
+        "elapsed_ms": 73040.97,
+        "status": "ST",
+        "mode": "GS",
+        "value": 0.0,
+        "unit": "g",
+        "ascii": "ST,GS,+  0.000 g"
+      }
+    ]
+  }
+]

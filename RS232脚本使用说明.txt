@@ -1,0 +1,81 @@
+RS232 称重读取脚本使用说明
+
+适用范围
+Python 3.10 或更新版本，默认 COM9，固定使用实测成功的 9600、8N1、无流控。
+封装的是当前 ST/US,GS,正负重量,g,CR LF 格式。GS 只保留，不解释为毛重或净重。
+软件不发送命令；请使用设备按键去皮，等待显示归零及串口稳定后再开始加液。
+数值使用 Decimal 保留十进制；显示到 0.001 g 不代表已验证 1 mg 准确度。
+
+安装
+在本项目目录打开 PowerShell：
+  python -m pip install -r requirements-rs232.txt
+本机已安装 pyserial 3.5，可直接运行。
+运行前关闭其他占用 COM9 的串口工具。默认每次开始读取会清除电脑上的旧接收缓存，等待新数据。
+
+命令行用法
+
+1. 持续显示正负重量和 ST/US；Ctrl+C 结束：
+  python rs232_scale.py
+
+2. 读取 10 秒，同时保存数据：
+  python rs232_scale.py --seconds 10 --log-prefix logs/run01
+将生成 run01.csv（已解析的合法帧）、run01.bin（实际读取的原始字节）、
+run01.events.jsonl（原始接收块的 UTC 时间、HEX、异常及缓冲清除事件）。
+文件不会被覆盖；再次运行请换用 run02 等名称。
+按条数或稳定条件结束时，最后一块原始数据可能仍包含尚未解析的后续帧，
+因此 bin 中的完整帧数可能多于 csv 中的已处理记录数。
+
+3. 连续显示时只看 ST：
+  python rs232_scale.py --stable-only
+这里只过滤显示；ST 单帧并不等于已满足连续稳定窗口。日志仍记录 ST 和 US。
+
+4. 等待稳定窗口，输出一条读数并退出：
+  python rs232_scale.py --stable
+默认最多等 15 秒，要求连续 5 帧 ST，窗口最大重量减最小重量不超过 0.002 g，
+相邻接收间隔不超过 0.5 秒。US、非法报文或过长间隔会重置窗口。
+结果取该窗口最新一帧，不是均值。这些阈值是应用设置，可按实验要求调整。
+
+5. 自定义稳定窗口并保存日志：
+  python rs232_scale.py --stable --timeout 30 --consecutive 8 --tolerance-g 0.001 --log-prefix logs/stable01
+
+6. 读取 20 条后退出，或改用其他端口连接同一格式设备：
+  python rs232_scale.py --count 20
+  python rs232_scale.py --port COM9 --count 20
+
+Python 导入用法
+
+  from rs232_scale import ScaleReader
+
+  # 持续读数；grams 和 milligrams 都是 Decimal。
+  with ScaleReader("COM9", log_prefix="logs/python01") as scale:
+      for reading in scale.readings(duration=10):
+          print(reading.grams, reading.milligrams, reading.stable, reading.status)
+
+  # 用户先在设备上手动去皮，再等稳定值。
+  with ScaleReader("COM9") as scale:
+      result = scale.wait_stable(timeout=15, consecutive=5, tolerance_g="0.002")
+      print("稳定读数：", result.grams, "g")
+
+Reading 字段
+grams：含正负号的克数。
+milligrams：换算后的毫克数。
+status / stable：原始 ST/US 状态，以及是否为 ST。
+mode：原始 GS 字段，无毛重/净重推断。
+raw：含 CR LF 的原始 18 字节报文。
+received_at：带 UTC 时区的上位机解析时间，不是设备测量时间。
+同一连接一次只运行一个 readings / wait_stable 操作。
+
+异常处理
+连续 3 秒没有合法重量帧会抛出 TimeoutError，避免使用历史读数。
+wait_stable 还会限制总等待时间；未得到稳定窗口则抛出 TimeoutError。
+串口不存在、占用、断线或日志文件冲突时，命令行显示原因并以非零状态退出。
+不自动重连或重发任何指令。关闭后重新运行或重新建立 ScaleReader 即可。
+未知单位、未知状态、NT、不同小数位等未验证格式会被报告并拒绝解析。
+启动前导 00 或接入时碰到的半帧会显示 Discarded 提示，并记录及重新同步；
+这类开头残片不妨碍后续读取，不会删除合法帧内部的字节。
+退出或发生异常后会关闭串口和日志。
+
+验证
+  python -m unittest -v test_rs232_scale
+测试包含真实抓包的全部 1,486 帧、任意拆包/粘包、负数、异常恢复、稳定筛选与超时。
+本机已通过 13 项自动测试；COM9 实机已验证连续读取 20 条及连续 5 帧稳定返回。
